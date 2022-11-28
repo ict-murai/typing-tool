@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <p>ルール1 : 100秒以内に5問以上クリアせよ。</p>
+      <p>ルール2 : 1問30秒の時間制限がある。</p>
+      <p>Start  : ゲームスタート。</p>
+      <p>Restart: ゲーム再スタート。</p>
+      <p>Next   : 次の問題へスキップ。</p>
+    </header>
+
+    <div class="timer" id="timer"></div>
+    <div class="container">
+      <div class="type-display" id="typeDisplay"></div>
+      <textarea id="typeInput" class="type-input" autofocus></textarea>
+    </div>
+    <div class="clear-count" id="clear-count">Clear: 
+      <div class="count" id="count">0</div>
+      <p>/</p>
+      <p>5</p>
+    </div>
+
+    <div class="timecount">
+      Countdown:<div id="countdown" class="countdown">100</div>
+      <button id="start" class="start_btn" onclick="clickEvent()">Start</button>
+      <button id="next" class="start_btn">Next</button>
+    </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
